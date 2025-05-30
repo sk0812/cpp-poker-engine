@@ -1,6 +1,7 @@
 #include <iostream>
 #include "deck.hpp"
 #include "game.hpp"
+#include "board.hpp"
 
 Game::Game()
 {
@@ -24,4 +25,17 @@ void Game::start()
     {
         player.showHand();
     }
+
+    Board board;
+    std::cout << "\nDealing flop...\n";
+    board.dealFlop(deck);
+    board.show();
+
+    std::cout << "Dealing turn...\n";
+    board.dealTurn(deck);
+    board.show();
+
+    std::cout << "Dealing river...\n";
+    board.dealRiver(deck);
+    board.show();
 }

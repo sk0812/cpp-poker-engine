@@ -129,6 +129,30 @@ poker/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker.dir/build.make CMakeFiles/poker.dir/build
 .PHONY : poker/fast
 
+src/board.o: src/board.cpp.o
+.PHONY : src/board.o
+
+# target to build an object file
+src/board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker.dir/build.make CMakeFiles/poker.dir/src/board.cpp.o
+.PHONY : src/board.cpp.o
+
+src/board.i: src/board.cpp.i
+.PHONY : src/board.i
+
+# target to preprocess a source file
+src/board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker.dir/build.make CMakeFiles/poker.dir/src/board.cpp.i
+.PHONY : src/board.cpp.i
+
+src/board.s: src/board.cpp.s
+.PHONY : src/board.s
+
+# target to generate assembly for a file
+src/board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker.dir/build.make CMakeFiles/poker.dir/src/board.cpp.s
+.PHONY : src/board.cpp.s
+
 src/card.o: src/card.cpp.o
 .PHONY : src/card.o
 
@@ -306,6 +330,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... poker"
+	@echo "... src/board.o"
+	@echo "... src/board.i"
+	@echo "... src/board.s"
 	@echo "... src/card.o"
 	@echo "... src/card.i"
 	@echo "... src/card.s"
