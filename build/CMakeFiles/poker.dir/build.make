@@ -72,10 +72,38 @@ include CMakeFiles/poker.dir/flags.make
 CMakeFiles/poker.dir/codegen:
 .PHONY : CMakeFiles/poker.dir/codegen
 
+CMakeFiles/poker.dir/src/card.cpp.o: CMakeFiles/poker.dir/flags.make
+CMakeFiles/poker.dir/src/card.cpp.o: /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/card.cpp
+CMakeFiles/poker.dir/src/card.cpp.o: CMakeFiles/poker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sidkheria/Documents/Coding/cpp-poker-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/poker.dir/src/card.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/poker.dir/src/card.cpp.o -MF CMakeFiles/poker.dir/src/card.cpp.o.d -o CMakeFiles/poker.dir/src/card.cpp.o -c /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/card.cpp
+
+CMakeFiles/poker.dir/src/card.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/poker.dir/src/card.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/card.cpp > CMakeFiles/poker.dir/src/card.cpp.i
+
+CMakeFiles/poker.dir/src/card.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/poker.dir/src/card.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/card.cpp -o CMakeFiles/poker.dir/src/card.cpp.s
+
+CMakeFiles/poker.dir/src/deck.cpp.o: CMakeFiles/poker.dir/flags.make
+CMakeFiles/poker.dir/src/deck.cpp.o: /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/deck.cpp
+CMakeFiles/poker.dir/src/deck.cpp.o: CMakeFiles/poker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sidkheria/Documents/Coding/cpp-poker-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/poker.dir/src/deck.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/poker.dir/src/deck.cpp.o -MF CMakeFiles/poker.dir/src/deck.cpp.o.d -o CMakeFiles/poker.dir/src/deck.cpp.o -c /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/deck.cpp
+
+CMakeFiles/poker.dir/src/deck.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/poker.dir/src/deck.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/deck.cpp > CMakeFiles/poker.dir/src/deck.cpp.i
+
+CMakeFiles/poker.dir/src/deck.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/poker.dir/src/deck.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/deck.cpp -o CMakeFiles/poker.dir/src/deck.cpp.s
+
 CMakeFiles/poker.dir/src/evaluator.cpp.o: CMakeFiles/poker.dir/flags.make
 CMakeFiles/poker.dir/src/evaluator.cpp.o: /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/evaluator.cpp
 CMakeFiles/poker.dir/src/evaluator.cpp.o: CMakeFiles/poker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sidkheria/Documents/Coding/cpp-poker-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/poker.dir/src/evaluator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sidkheria/Documents/Coding/cpp-poker-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/poker.dir/src/evaluator.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/poker.dir/src/evaluator.cpp.o -MF CMakeFiles/poker.dir/src/evaluator.cpp.o.d -o CMakeFiles/poker.dir/src/evaluator.cpp.o -c /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/evaluator.cpp
 
 CMakeFiles/poker.dir/src/evaluator.cpp.i: cmake_force
@@ -89,7 +117,7 @@ CMakeFiles/poker.dir/src/evaluator.cpp.s: cmake_force
 CMakeFiles/poker.dir/src/game.cpp.o: CMakeFiles/poker.dir/flags.make
 CMakeFiles/poker.dir/src/game.cpp.o: /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/game.cpp
 CMakeFiles/poker.dir/src/game.cpp.o: CMakeFiles/poker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sidkheria/Documents/Coding/cpp-poker-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/poker.dir/src/game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sidkheria/Documents/Coding/cpp-poker-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/poker.dir/src/game.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/poker.dir/src/game.cpp.o -MF CMakeFiles/poker.dir/src/game.cpp.o.d -o CMakeFiles/poker.dir/src/game.cpp.o -c /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/game.cpp
 
 CMakeFiles/poker.dir/src/game.cpp.i: cmake_force
@@ -103,7 +131,7 @@ CMakeFiles/poker.dir/src/game.cpp.s: cmake_force
 CMakeFiles/poker.dir/src/main.cpp.o: CMakeFiles/poker.dir/flags.make
 CMakeFiles/poker.dir/src/main.cpp.o: /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/main.cpp
 CMakeFiles/poker.dir/src/main.cpp.o: CMakeFiles/poker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sidkheria/Documents/Coding/cpp-poker-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/poker.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sidkheria/Documents/Coding/cpp-poker-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/poker.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/poker.dir/src/main.cpp.o -MF CMakeFiles/poker.dir/src/main.cpp.o.d -o CMakeFiles/poker.dir/src/main.cpp.o -c /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/main.cpp
 
 CMakeFiles/poker.dir/src/main.cpp.i: cmake_force
@@ -117,7 +145,7 @@ CMakeFiles/poker.dir/src/main.cpp.s: cmake_force
 CMakeFiles/poker.dir/src/player.cpp.o: CMakeFiles/poker.dir/flags.make
 CMakeFiles/poker.dir/src/player.cpp.o: /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/player.cpp
 CMakeFiles/poker.dir/src/player.cpp.o: CMakeFiles/poker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sidkheria/Documents/Coding/cpp-poker-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/poker.dir/src/player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sidkheria/Documents/Coding/cpp-poker-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/poker.dir/src/player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/poker.dir/src/player.cpp.o -MF CMakeFiles/poker.dir/src/player.cpp.o.d -o CMakeFiles/poker.dir/src/player.cpp.o -c /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/player.cpp
 
 CMakeFiles/poker.dir/src/player.cpp.i: cmake_force
@@ -131,7 +159,7 @@ CMakeFiles/poker.dir/src/player.cpp.s: cmake_force
 CMakeFiles/poker.dir/src/utils.cpp.o: CMakeFiles/poker.dir/flags.make
 CMakeFiles/poker.dir/src/utils.cpp.o: /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/utils.cpp
 CMakeFiles/poker.dir/src/utils.cpp.o: CMakeFiles/poker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sidkheria/Documents/Coding/cpp-poker-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/poker.dir/src/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sidkheria/Documents/Coding/cpp-poker-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/poker.dir/src/utils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/poker.dir/src/utils.cpp.o -MF CMakeFiles/poker.dir/src/utils.cpp.o.d -o CMakeFiles/poker.dir/src/utils.cpp.o -c /Users/sidkheria/Documents/Coding/cpp-poker-engine/src/utils.cpp
 
 CMakeFiles/poker.dir/src/utils.cpp.i: cmake_force
@@ -144,6 +172,8 @@ CMakeFiles/poker.dir/src/utils.cpp.s: cmake_force
 
 # Object files for target poker
 poker_OBJECTS = \
+"CMakeFiles/poker.dir/src/card.cpp.o" \
+"CMakeFiles/poker.dir/src/deck.cpp.o" \
 "CMakeFiles/poker.dir/src/evaluator.cpp.o" \
 "CMakeFiles/poker.dir/src/game.cpp.o" \
 "CMakeFiles/poker.dir/src/main.cpp.o" \
@@ -153,6 +183,8 @@ poker_OBJECTS = \
 # External object files for target poker
 poker_EXTERNAL_OBJECTS =
 
+poker: CMakeFiles/poker.dir/src/card.cpp.o
+poker: CMakeFiles/poker.dir/src/deck.cpp.o
 poker: CMakeFiles/poker.dir/src/evaluator.cpp.o
 poker: CMakeFiles/poker.dir/src/game.cpp.o
 poker: CMakeFiles/poker.dir/src/main.cpp.o
@@ -160,7 +192,7 @@ poker: CMakeFiles/poker.dir/src/player.cpp.o
 poker: CMakeFiles/poker.dir/src/utils.cpp.o
 poker: CMakeFiles/poker.dir/build.make
 poker: CMakeFiles/poker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/sidkheria/Documents/Coding/cpp-poker-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable poker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/sidkheria/Documents/Coding/cpp-poker-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable poker"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/poker.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

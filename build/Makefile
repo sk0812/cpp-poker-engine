@@ -129,6 +129,54 @@ poker/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker.dir/build.make CMakeFiles/poker.dir/build
 .PHONY : poker/fast
 
+src/card.o: src/card.cpp.o
+.PHONY : src/card.o
+
+# target to build an object file
+src/card.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker.dir/build.make CMakeFiles/poker.dir/src/card.cpp.o
+.PHONY : src/card.cpp.o
+
+src/card.i: src/card.cpp.i
+.PHONY : src/card.i
+
+# target to preprocess a source file
+src/card.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker.dir/build.make CMakeFiles/poker.dir/src/card.cpp.i
+.PHONY : src/card.cpp.i
+
+src/card.s: src/card.cpp.s
+.PHONY : src/card.s
+
+# target to generate assembly for a file
+src/card.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker.dir/build.make CMakeFiles/poker.dir/src/card.cpp.s
+.PHONY : src/card.cpp.s
+
+src/deck.o: src/deck.cpp.o
+.PHONY : src/deck.o
+
+# target to build an object file
+src/deck.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker.dir/build.make CMakeFiles/poker.dir/src/deck.cpp.o
+.PHONY : src/deck.cpp.o
+
+src/deck.i: src/deck.cpp.i
+.PHONY : src/deck.i
+
+# target to preprocess a source file
+src/deck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker.dir/build.make CMakeFiles/poker.dir/src/deck.cpp.i
+.PHONY : src/deck.cpp.i
+
+src/deck.s: src/deck.cpp.s
+.PHONY : src/deck.s
+
+# target to generate assembly for a file
+src/deck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker.dir/build.make CMakeFiles/poker.dir/src/deck.cpp.s
+.PHONY : src/deck.cpp.s
+
 src/evaluator.o: src/evaluator.cpp.o
 .PHONY : src/evaluator.o
 
@@ -258,6 +306,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... poker"
+	@echo "... src/card.o"
+	@echo "... src/card.i"
+	@echo "... src/card.s"
+	@echo "... src/deck.o"
+	@echo "... src/deck.i"
+	@echo "... src/deck.s"
 	@echo "... src/evaluator.o"
 	@echo "... src/evaluator.i"
 	@echo "... src/evaluator.s"

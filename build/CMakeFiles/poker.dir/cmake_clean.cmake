@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/poker.dir/src/card.cpp.o"
+  "CMakeFiles/poker.dir/src/card.cpp.o.d"
+  "CMakeFiles/poker.dir/src/deck.cpp.o"
+  "CMakeFiles/poker.dir/src/deck.cpp.o.d"
   "CMakeFiles/poker.dir/src/evaluator.cpp.o"
   "CMakeFiles/poker.dir/src/evaluator.cpp.o.d"
   "CMakeFiles/poker.dir/src/game.cpp.o"
