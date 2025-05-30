@@ -94,4 +94,29 @@ void Game::start()
 
         std::cout << "\n";
     }
+
+    EvaluatedHand bestHand = evaluator.evaluate(players[0].getHand());
+    std::string winner = players[0].getName();
+
+    for (size_t i = 1; i < players.size(); ++i)
+    {
+        std::vector<Card> total = players[i].getHand();
+        std::vector<Card> boardCards = board.getCards();
+        total.insert(total.end(), boardCards.begin(), boardCards.end());
+
+        EvaluatedHand currentHand = evaluator.evaluate(total);
+
+        int result = Evaluator::compareHands(currentHand, bestHand);
+        if (result == 1)
+        {
+            bestHand = currentHand;
+            winner = players[i].getName();
+        }
+        else if (result == 0 && winner != players[i].getName())
+        {
+            winner += " & " + players[i].getName(); // Tie
+        }
+    }
+
+    std::cout << "\nWinner: " << winner << "\n";
 }

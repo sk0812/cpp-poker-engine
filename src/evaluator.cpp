@@ -189,3 +189,22 @@ EvaluatedHand Evaluator::evaluate(const std::vector<Card> &cards)
     std::vector<Rank> allSorted = getSortedRanks(allRanks);
     return EvaluatedHand{HandRank::HighCard, std::vector<Rank>(allSorted.begin(), allSorted.begin() + 5)};
 }
+
+int Evaluator::compareHands(const EvaluatedHand &h1, const EvaluatedHand &h2)
+{
+    if (h1.rank > h2.rank)
+        return 1;
+    if (h1.rank < h2.rank)
+        return -1;
+
+    // Same hand rank — use tiebreakers
+    for (size_t i = 0; i < std::min(h1.tiebreakers.size(), h2.tiebreakers.size()); ++i)
+    {
+        if (h1.tiebreakers[i] > h2.tiebreakers[i])
+            return 1;
+        if (h1.tiebreakers[i] < h2.tiebreakers[i])
+            return -1;
+    }
+
+    return 0; // Tie
+}

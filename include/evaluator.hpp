@@ -27,6 +27,7 @@ class Evaluator
 {
 public:
     EvaluatedHand evaluate(const std::vector<Card> &cards);
+    static int compareHands(const EvaluatedHand &h1, const EvaluatedHand &h2);
 };
 
 #endif // EVALUATOR_HPP
