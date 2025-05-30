@@ -9,12 +9,19 @@ Game::Game()
 
 void Game::start()
 {
-    std::cout << "Game started. Dealing 5 cards:\n";
-    Deck deck;
-    for (int i = 0; i < 5; ++i)
+    std::cout << "Starting hand...\n";
+
+    players.emplace_back("Player 1");
+    players.emplace_back("Player 2");
+
+    for (Player &player : players)
     {
-        Card c = deck.dealCard();
-        std::cout << c.toString() << " ";
+        player.receiveCard(deck.dealCard());
+        player.receiveCard(deck.dealCard());
     }
-    std::cout << "\n";
+
+    for (const Player &player : players)
+    {
+        player.showHand();
+    }
 }

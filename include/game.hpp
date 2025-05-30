@@ -1,11 +1,14 @@
-#ifndef GAME_HPP
-#define GAME_HPP
+#include "player.hpp"
+#include "deck.hpp"
+#include <vector>
 
 class Game
 {
 public:
     Game();
     void start();
-};
 
-#endif
+private:
+    Deck deck;
+    std::vector<Player> players;
+};
