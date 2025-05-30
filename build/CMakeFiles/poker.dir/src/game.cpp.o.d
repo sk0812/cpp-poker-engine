@@ -797,4 +797,5 @@ CMakeFiles/poker.dir/src/game.cpp.o: \
   /Users/sidkheria/Documents/Coding/cpp-poker-engine/include/card.hpp \
   /Users/sidkheria/Documents/Coding/cpp-poker-engine/include/game.hpp \
   /Users/sidkheria/Documents/Coding/cpp-poker-engine/include/player.hpp \
-  /Users/sidkheria/Documents/Coding/cpp-poker-engine/include/board.hpp
+  /Users/sidkheria/Documents/Coding/cpp-poker-engine/include/board.hpp \
+  /Users/sidkheria/Documents/Coding/cpp-poker-engine/include/evaluator.hpp

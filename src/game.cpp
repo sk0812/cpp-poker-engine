@@ -2,6 +2,7 @@
 #include "deck.hpp"
 #include "game.hpp"
 #include "board.hpp"
+#include "evaluator.hpp"
 
 Game::Game()
 {
@@ -38,4 +39,59 @@ void Game::start()
     std::cout << "Dealing river...\n";
     board.dealRiver(deck);
     board.show();
+
+    Evaluator evaluator;
+
+    std::cout << "\nEvaluating hands...\n";
+
+    for (const Player &player : players)
+    {
+        std::vector<Card> totalCards = player.getHand();
+        std::vector<Card> boardCards = board.getCards();
+        totalCards.insert(totalCards.end(), boardCards.begin(), boardCards.end());
+
+        EvaluatedHand hand = evaluator.evaluate(totalCards);
+
+        std::cout << player.getName() << ": ";
+
+        if (hand.rank == HandRank::StraightFlush && hand.tiebreakers[0] == Rank::Ace)
+        {
+            std::cout << "Royal Flush";
+        }
+        else
+        {
+            switch (hand.rank)
+            {
+            case HandRank::HighCard:
+                std::cout << "High Card";
+                break;
+            case HandRank::Pair:
+                std::cout << "Pair";
+                break;
+            case HandRank::TwoPair:
+                std::cout << "Two Pair";
+                break;
+            case HandRank::ThreeOfAKind:
+                std::cout << "Three of a Kind";
+                break;
+            case HandRank::Straight:
+                std::cout << "Straight";
+                break;
+            case HandRank::Flush:
+                std::cout << "Flush";
+                break;
+            case HandRank::FullHouse:
+                std::cout << "Full House";
+                break;
+            case HandRank::FourOfAKind:
+                std::cout << "Four of a Kind";
+                break;
+            case HandRank::StraightFlush:
+                std::cout << "Straight Flush";
+                break;
+            }
+        }
+
+        std::cout << "\n";
+    }
 }
